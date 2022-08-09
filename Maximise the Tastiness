@@ -1,0 +1,6 @@
+n=int(input())
+for i in range(n):
+    a=list(map(int,input().split()))
+    m1=max(a[0],a[1])
+    m2=max(a[2],a[3])
+    print(m1+m2)
