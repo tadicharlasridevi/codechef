@@ -1,0 +1,13 @@
+n=int(input())
+for i in range(n):
+    a=int(input())
+    k=input()
+    r=""
+    k=list(k)
+    for i in range(0,len(k)-1,2):
+        k[i],k[i+1]=k[i+1],k[i]
+    for i in range(len(k)):
+        d=(ord('z')-ord(k[i]))-(ord(k[i])-ord('a'))
+        r=r+chr(d+ord(k[i]))
+    print(r)
+        
